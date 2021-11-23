@@ -10,7 +10,7 @@
     transform-origin: top;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       height: 100%;
       width: 100%;
@@ -22,7 +22,7 @@
         $color-grad-1,
         $color-grad-2
       );
-      opacity: 0.6;
+      opacity: 0.4;
     }
   }
 

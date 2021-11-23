@@ -1,6 +1,5 @@
-// $color-primary: #f59a83;
-$color-primary: #f3ab82;
-$color-grad-1: #fbe089;
+$color-primary: #ee6a11;
+$color-grad-1: #065226;
 $color-grad-2: #ecf482;
 
 $color-grey-light-1: #f9f5f3; // Light background
@@ -12,7 +11,7 @@ $color-grey-dark-2: #918581; // Lighter text
 $gradient: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
 
 $bp-large: 78.15em; // 1250px
-$bp-medium: 61.25em; // 980px
+$bp-medium: 63em; // 980px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
@@ -29,10 +28,10 @@ $bp-smallest: 31.25em; // 500px
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 
   @media only screen and (max-width: $bp-medium) {
-    font-size: 50%;
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
 }
 
