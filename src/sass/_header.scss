@@ -8,6 +8,7 @@
   @media only screen and (max-width: $bp-smallest) {
     order: 1;
     padding: 2rem 1rem;
+    flex-wrap: wrap;
   }
 
   &__logo {
@@ -87,6 +88,10 @@
 .nav {
   align-self: stretch;
   margin-right: 2.5rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    order: 2;
+  }
 
   &__list {
     list-style: none;
