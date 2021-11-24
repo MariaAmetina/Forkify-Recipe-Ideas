@@ -30,7 +30,7 @@
     backface-visibility: hidden;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       height: 100%;
       width: 100%;
@@ -74,6 +74,10 @@
     max-width: 25rem;
     white-space: nowrap;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 45rem;
+    }
   }
 
   &__publisher {
@@ -100,6 +104,10 @@
       height: 1.2rem;
       width: 1.2rem;
       fill: $color-primary;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 2rem;
     }
   }
 }

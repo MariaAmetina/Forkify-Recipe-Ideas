@@ -68,6 +68,11 @@
     display: flex;
     align-items: center;
     padding: 7.5rem 8rem 3.5rem 8rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-wrap: wrap;
+      padding: 7.5rem 2rem 3.5rem 2rem;
+    }
   }
 
   &__info {
@@ -109,7 +114,6 @@
     width: 4rem;
     border-radius: 10rem;
 
-    margin-left: auto;
     margin-right: 1.75rem;
 
     svg {
@@ -136,6 +140,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem 3rem;
     list-style: none;
+
+    @media only screen and (max-width: $bp-small) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__ingredient {
@@ -175,5 +184,13 @@
 
   &__publisher {
     font-weight: 700;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    order: 2;
   }
 }

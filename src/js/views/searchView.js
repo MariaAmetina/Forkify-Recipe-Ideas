@@ -14,6 +14,12 @@ class SearchView {
   addHandlerSearch(handler) {
     this._parentEl.addEventListener("submit", function (e) {
       e.preventDefault();
+
+      if (window.screen.width <= 500) {
+        document.querySelector(".search-results").classList.remove("hide");
+        document.querySelector(".recipe").classList.add("hide");
+      }
+
       handler();
     });
   }

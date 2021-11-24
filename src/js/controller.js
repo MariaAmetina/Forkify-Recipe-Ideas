@@ -37,6 +37,10 @@ const controlRecipes = async function () {
 
     //3) Rendering recipe
     recipeView.render(model.state.recipe);
+
+    if (window.screen.width <= 500) {
+      document.querySelector(".recipe").classList.remove("hide");
+    }
   } catch (err) {
     recipeView.renderError();
   }

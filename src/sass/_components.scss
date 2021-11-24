@@ -25,7 +25,7 @@
 .btn {
   @extend %btn;
 
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 3rem;
   font-size: 1.5rem;
   font-weight: 600;
 
@@ -197,9 +197,13 @@
 
   display: flex;
 
+  @media only screen and (max-width: $bp-smallest) {
+    height: 100vh;
+  }
+
   svg {
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     fill: $color-primary;
     transform: translateY(1.1rem);
   }
@@ -210,4 +214,8 @@
     line-height: 1.5;
     font-weight: 600;
   }
+}
+
+.hide {
+  display: none;
 }

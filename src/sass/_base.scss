@@ -11,8 +11,9 @@ $color-grey-dark-2: #918581; // Lighter text
 $gradient: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
 
 $bp-large: 78.15em; // 1250px
-$bp-medium: 63em; // 980px
-$bp-small: 37.5em; // 600px
+$bp-medium: 61.25em; // 980px
+$bp-small: 46.75em; // 750px
+$bp-smaller: 34.25em; // 550px
 $bp-smallest: 31.25em; // 500px
 
 * {
@@ -33,6 +34,14 @@ html {
   @media only screen and (max-width: $bp-medium) {
     font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 40%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -48,6 +57,7 @@ body {
 
 .container {
   max-width: 120rem;
+  width: 100%;
   min-height: 117rem;
   margin: 4vw auto;
   background-color: #fff;
@@ -66,5 +76,18 @@ body {
     max-width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1.5fr 2fr;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    display: flex;
+    flex-direction: column;
   }
 }
