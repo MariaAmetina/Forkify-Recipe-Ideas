@@ -11,10 +11,6 @@ import "core-js/stable"; //в терминале npm i core-js regenerator-runti
 import "regenerator-runtime/runtime"; //для создания полифилов для async/await
 import { async } from "regenerator-runtime";
 
-// https://forkify-api.herokuapp.com/v2
-
-///////////////////////////////////////
-
 // if (module.hot) {
 //   module.hot.accept(); //фича из parcel, которая не дает пропасть загруженным результам при обновлении страницы
 // }
